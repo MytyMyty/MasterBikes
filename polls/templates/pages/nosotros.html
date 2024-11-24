@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterBikes</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% include "header.html" %} 
+<main>
+            <div class="container bg-light rounded-bottom border-bottom-0">
+                <div class="row">
+                    <div class="col-md-6 d-none d-md-block" style="margin-top: 50px;">
+                        <img src="{% static 'img/taller.png' %}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2>MasterBikes</h2>
+                        <h5>Nosotros</h5>
+                        <p>{% lorem 3 p random %}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item fin active">
+                    <img src="{% static 'img/i1.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="caption">
+                        <h5>La aventura te espera. ¡Sube a tu bici!</h5>
+                        <p>Bicicletas todoterreno para ciclistas aventureros: diseñadas para soportar las condiciones más extremas y llevarte a la cima.</p>
+                    </div>
+                </div>
+                <div class="carousel-item fin">
+                    <img src="{% static 'img/i2.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="caption">
+                        <h5>Pedalea, pero con Confianza!</h5>
+                        <p>Visita nuestra tienda online o tienda física y descubre todo lo que tenemos para ofrecerte en protección ciclista.</p>
+                    </div>
+                </div>
+                <div class="carousel-item fin">
+                    <img src="{% static 'img/i3.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="caption">
+                        <h5>
+                            ¡Tu bici como nueva! Repuestos y reparaciones a tu alcance</h5>
+                        <p>En MasterBikes, somos especialistas en reparaciones y repuestos de bicicletas. Contamos con un taller equipado con las mejores herramientas y un equipo de expertos mecánicos que te brindarán un servicio rápido, eficiente y de calidad.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="icons container">
+
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="{% static 'img/i1.svg' %}" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>¡Invierte en calidad y disfruta de la mejor experiencia de ciclismo!</h3>
+                        <p>Visita MasterBikes y descubre la amplia selección de bicicletas de las mejores marcas que tenemos para ofrecerte.</p>
+                </div>
+            </div>
+    
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="{% static 'img/i2.svg' %}" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>Más que repuestos, un servicio completo</h3>
+                        <p>Te ofrecemos una amplia gama de repuestos de la más alta calidad para tu bicicleta. Además, contamos con un equipo de expertos maestros que se encargarán de la instalación de manera profesional y eficiente.</p>
+                </div>
+            </div>
+    
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="{% static 'img/i3.svg' %}" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>
+                        Pedalea seguro con la protección de vanguardia de Masterbikes</h3>
+                        <p> Entendemos que la seguridad es fundamental! Por eso, te ofrecemos una amplia gama de productos de protección de la más alta calidad, diseñados para protegerte en caso de caídas o accidentes.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+   
+
+    {% include "footer.html" %}
+    
+    
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+
+    
+</body>
+
+</html>
